@@ -9,7 +9,7 @@ The Swy code is capable of performing metaheuristic optimizations of molecular s
 ` ./gradlew clean build`
 
 To execute:
-Java –jar target/libs/swy-0.1.jar input.properties
+`Java –jar target/libs/swy-0.1.jar input.properties`
 
 Take an example input.properties file, e.g.:
 examples/inputfiles/aco_dihed_mop_trien.properties
