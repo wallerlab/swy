@@ -2,7 +2,7 @@
 
 The Swy code is capable of performing metaheuristic optimizations of molecular systems.
 
-` git clone `
+` git clone https://github.com/wallerlab/swy.git`
 
 ` cd swy`
 
