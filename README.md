@@ -1,5 +1,7 @@
 # Swy
 
+[![Build Status](https://travis-ci.org/wallerlab/swy.svg?branch=master)](https://travis-ci.org/wallerlab/swy)
+
 A Hybrid Metaheuristic Non-Local Optimizer for Molecular Systems.
 
 The details can be found in:
