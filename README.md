@@ -1,4 +1,4 @@
-# Swy-0.1 
+# Swy
 
 The Swy code is capable of performing metaheuristic optimizations of molecular systems.
 
