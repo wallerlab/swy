@@ -19,22 +19,27 @@ Quick Start
 ` ./gradlew clean build`
 
 To execute:
+
 `Java –jar target/libs/swy-0.1.jar input.properties`
 
 Take an example input.properties file, e.g.:
-examples/inputfiles/aco_dihed_mop_trien.properties
+`examples/inputfiles/aco_dihed_mop_trien.properties`
 
 The input.properties file contains the location of the molecular system, e.g: 
-example/molecularsystems/FormicAcidDimer.xml 
+
+`example/molecularsystems/FormicAcidDimer.xml `
 
 Therefore, an actual job can be run: 
-java –jar swy-0.1.jar  examples/aco_dihed_mop_trien.properties
+
+`java –jar swy-0.1.jar  examples/aco_dihed_mop_trien.properties`
 
 The resulting structures can be easily viewed in VMD by loading the .xyz files:
-analysis/structures/
+
+`analysis/structures/`
 
 The convergence behavior of metaheuristics can be followed in:
-analysis/visualizable/ 
+
+`analysis/visualizable/ `
 
 The documentation can be viewed in a browser by opening docs/index.html 
 
