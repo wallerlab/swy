@@ -1,6 +1,15 @@
 # Swy
 
-The Swy code is capable of performing metaheuristic optimizations of molecular systems.
+A Hybrid Metaheuristic Non-Local Optimizer for Molecular Systems.
+
+The details can be found in:
+
+**A Hybrid Metaheuristic Approach for Non-Local Optimization of Molecular Systems** 
+
+Thomas Dresselhaus, Jack Yang, Sadhana Kumbhar, Mark P. Waller
+J. Chem. Theory Comput., (2013) 9, 2137–2149. 
+
+DOI:10.1021/ct301079m
 
 Quick Start 
 
