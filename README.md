@@ -1,7 +1,7 @@
 # Swy
 
 [![Build Status](https://travis-ci.org/wallerlab/swy.svg?branch=master)](https://travis-ci.org/wallerlab/swy)
-
+[![Coverage Status](https://coveralls.io/repos/github/wallerlab/swy/badge.svg?branch=master)](https://coveralls.io/github/wallerlab/swy?branch=master)
 
 **A Hybrid Metaheuristic Approach for Non-Local Optimization of Molecular Systems** 
 
