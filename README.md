@@ -1,5 +1,7 @@
 # Swy
 
+[![Join the chat at https://gitter.im/wallerlab/swy](https://badges.gitter.im/wallerlab/swy.svg)](https://gitter.im/wallerlab/swy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Apache License](http://img.shields.io/badge/license-APACHE2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![Build Status](https://travis-ci.org/wallerlab/swy.svg?branch=master)](https://travis-ci.org/wallerlab/swy)
 [![Coverage Status](https://coveralls.io/repos/github/wallerlab/swy/badge.svg?branch=master)](https://coveralls.io/github/wallerlab/swy?branch=master)
