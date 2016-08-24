@@ -2,14 +2,12 @@ package org.wallerlab.swy.service.energy.wrappers;
 
 import static org.junit.Assert.*
 import org.junit.Test
-import org.junit.Before
-import org.junit.After
 
 import spock.lang.*
 
 class GaussianTest extends Specification{
 		
-	def MethaneXml ="""<molecule name="METHANE">
+	def methaneXml ="""<molecule name="METHANE">
 	<atoms>
 	  <atom symbol="C" x="0.257" y="-0.363" z="0.000"/>
 	  <atom symbol="H" x="0.257" y="0.727" z="0.000"/>
