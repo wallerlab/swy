@@ -1,21 +1,21 @@
-package org.wallerlab.swy.service.conformation.analyser;
+package org.wallerlab.swy.service.conformation.analyser
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.*
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.After
+import org.junit.Before
+import org.junit.Test
 import org.wallerlab.swy.model.Coordinates
 import org.wallerlab.swy.model.MolecularSystem
 
-public class GeometryTest {
+class GeometryTest {
 
 	private MolecularSystem molecularSystem
 	
 	private Coordinates coordinates
 	
 	@Before
-	public void setUp() {
+	void setUp() {
 		double[][] emptyCoord = new double[1][1]
 		emptyCoord[0][0]=0.0
 		molecularSystem = new MolecularSystem()
@@ -26,7 +26,7 @@ public class GeometryTest {
 	}
 
 	@After
-	public void tearDown() {
+	void tearDown() {
 		coordinates = null
 		molecularSystem = null
 	}
@@ -36,7 +36,7 @@ public class GeometryTest {
 	 * it should be extreeeemely static).
 	 */
 	@Test
-	public void centerOfMassTest() {
+	void centerOfMassTest() {
 		molecularSystem = new MolecularSystem()
 		molecularSystem.numberOfAtomsInMolecule = [2]
 		molecularSystem.atomLabel = [["C", "C"]]
@@ -51,7 +51,7 @@ public class GeometryTest {
 	}
 	
 	@Test
-	public void centerOfMassTestTwo() {
+	void centerOfMassTestTwo() {
 		molecularSystem = new MolecularSystem()
 		molecularSystem.numberOfAtomsInMolecule = [5]
 		molecularSystem.atomLabel = [["C", "F", "C", "C", "C"]]
@@ -66,7 +66,7 @@ public class GeometryTest {
 	}
 	
 	@Test
-	public void centerOfMassTestTwoMolecules() {
+	void centerOfMassTestTwoMolecules() {
 		molecularSystem = new MolecularSystem()
 		molecularSystem.numberOfAtomsInMolecule = [1, 5]
 		molecularSystem.atomLabel = [["C"], ["H", "H", "C", "H", "H"]]
