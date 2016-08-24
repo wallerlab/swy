@@ -1,4 +1,4 @@
-package org.wallerlab.swy.service.conformation.analyser;
+package org.wallerlab.swy.service.conformation.analyser
 
 import spock.lang.*
 
