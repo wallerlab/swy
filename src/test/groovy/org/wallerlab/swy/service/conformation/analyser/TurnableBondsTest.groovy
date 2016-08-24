@@ -21,21 +21,21 @@ class TurnableBondsTest{
 	private SearchSpace searchSpace
 	
 	@Before
-	public void setUp() {
+	void setUp() {
 		molecularSystem = new MolecularSystem()
 		bondRotation = new BondRotation()
 		bondRotation.setMolecularSystem(molecularSystem)
 	}
 	
 	@After
-	public void tearDown() {
+	void tearDown() {
 		molecularSystem = null
 		bondRotation = null
 		searchSpace = null
 	}
 	
 	@Test
-	public void testCreateListOfTurnableBonds() {
+	void testCreateListOfTurnableBonds() {
 		
 		/*
 		 *  Set up the fake system:
@@ -61,7 +61,7 @@ class TurnableBondsTest{
 	}
 	
 	@Test
-	public void testCreateListOfTurnableBondsTwoMolecules() {
+	void testCreateListOfTurnableBondsTwoMolecules() {
 		
 		// Set up the fake system (e.g. two Methanols)
 		molecularSystem.numberOfMolecules = 2
@@ -80,7 +80,7 @@ class TurnableBondsTest{
 	}
 	
 	@Test
-	public void testCreateListOfTurnableBondsRings() {
+	void testCreateListOfTurnableBondsRings() {
 		
 		// Set up the fake system (e.g. Phenol)
 		molecularSystem.numberOfMolecules = 1
