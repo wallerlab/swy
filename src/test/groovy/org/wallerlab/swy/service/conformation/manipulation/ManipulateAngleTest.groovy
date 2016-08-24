@@ -1,4 +1,4 @@
-package org.wallerlab.swy.service.conformation.manipulation;
+package org.wallerlab.swy.service.conformation.manipulation
 
 import org.wallerlab.swy.model.Coordinates
 import org.wallerlab.swy.model.MolecularSystem
