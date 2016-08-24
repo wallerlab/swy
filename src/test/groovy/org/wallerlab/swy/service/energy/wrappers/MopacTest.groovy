@@ -1,10 +1,9 @@
-package org.wallerlab.swy.service.energy.wrappers;
+package org.wallerlab.swy.service.energy.wrappers
 
 import spock.lang.*
 
 import org.wallerlab.swy.model.Coordinates
 import org.wallerlab.swy.model.MolecularSystem
-import org.wallerlab.swy.service.energy.wrappers.Mopac;
 
 class MopacTest extends Specification{
 	
