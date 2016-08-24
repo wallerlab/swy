@@ -1,6 +1,5 @@
-package org.wallerlab.swy.service.energy.wrappers;
+package org.wallerlab.swy.service.energy.wrappers
 
-import org.wallerlab.swy.service.energy.wrappers.DftbPlus;
 import spock.lang.*
 
 class DftbTest extends Specification{
