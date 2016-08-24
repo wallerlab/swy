@@ -1,6 +1,6 @@
 # Swy
 
-[ ![Download](https://api.bintray.com/packages/wallerlab/releases/swy/images/download.svg) ](https://bintray.com/wallerlab/release-candidates/swy/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/wallerlab/release-candidates/swy/images/download.svg) ](https://bintray.com/wallerlab/release-candidates/swy/_latestVersion)
 [![Apache License](http://img.shields.io/badge/license-APACHE2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![Build Status](https://travis-ci.org/wallerlab/swy.svg?branch=master)](https://travis-ci.org/wallerlab/swy)
 [![Coverage Status](https://coveralls.io/repos/github/wallerlab/swy/badge.svg?branch=master)](https://coveralls.io/github/wallerlab/swy?branch=master)
