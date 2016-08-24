@@ -66,7 +66,8 @@ class TurnableBondsTest{
 		// Set up the fake system (e.g. two Methanols)
 		molecularSystem.numberOfMolecules = 2
 		molecularSystem.numberOfAtomsInMolecule = [6, 6];
-		molecularSystem.bonds = [ [ [1, 2, 3, 4], [0, 5], [0], [0], [0], [1] ], [ [1, 2, 3, 4], [0, 5], [0], [0], [0], [1] ] ];
+		molecularSystem.bonds = [ [ [1, 2, 3, 4], [0, 5], [0], [0], [0], [1] ], [ [1, 2, 3, 4], \
+		                            [0, 5], [0], [0], [0], [1] ] ];
 		molecularSystem.numberOfBondsInMolecule = [5, 5];
 		// Run the class/method
 		searchSpace = bondRotation.generateSearchSpace();
@@ -85,7 +86,8 @@ class TurnableBondsTest{
 		// Set up the fake system (e.g. Phenol)
 		molecularSystem.numberOfMolecules = 1
 		molecularSystem.numberOfAtomsInMolecule = [13];
-		molecularSystem.bonds = [ [ [1, 5, 6], [0, 2, 8], [1, 3, 9], [2, 4, 10], [3, 5, 11], [0, 4, 12], [0, 7], [6], [1], [2], [3], [4], [5] ] ];
+		molecularSystem.bonds = [ [ [1, 5, 6], [0, 2, 8], [1, 3, 9], [2, 4, 10], [3, 5, 11], [0, 4, 12], [0, 7], \
+		                              [6], [1], [2], [3], [4], [5] ] ];
 		molecularSystem.numberOfBondsInMolecule = [25]
 		// Run the class/method
 		searchSpace = bondRotation.generateSearchSpace();
