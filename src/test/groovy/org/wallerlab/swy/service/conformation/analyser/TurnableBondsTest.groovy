@@ -1,21 +1,21 @@
-package org.wallerlab.swy.service.conformation.analyser;
+package org.wallerlab.swy.service.conformation.analyser
 
-import org.junit.Test;
-import org.junit.Before;
-import org.junit.After;
-import static org.junit.Assert.*;
+import static org.junit.Assert.*
 
-import org.wallerlab.swy.service.searchspace.factory.BondRotation;
+import org.junit.Test
+import org.junit.Before
+import org.junit.After
 
-import org.wallerlab.swy.model.MolecularSystem;
-import org.wallerlab.swy.model.SearchSpace;
+import org.wallerlab.swy.model.SearchSpace
+import org.wallerlab.swy.model.MolecularSystem
+import org.wallerlab.swy.service.searchspace.factory.BondRotation
 
 // actually this class tests both, the bondRotation search space AND the turnableBondsAnalyser
 
 //class TurnableBondsTest extends GroovyTestCase {
 class TurnableBondsTest{
 	
-	public BondRotation bondRotation
+	private BondRotation bondRotation
 	
 	private MolecularSystem molecularSystem
 	private SearchSpace searchSpace
