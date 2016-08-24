@@ -2,9 +2,9 @@ package org.wallerlab.swy.service.conformation.factory;
 
 import static org.junit.Assert.*;
 
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.After
+import org.junit.Before
+import org.junit.Test
 import org.wallerlab.swy.model.Coordinates
 import org.wallerlab.swy.model.MolecularSystem
 
@@ -21,7 +21,7 @@ class SupramolecularConformationTest {
 	private double[] solution
 		
 	@Before
-	public void setUp() {
+	void setUp() {
 		molecularSystem = new MolecularSystem()
 		molecularSystem.numberOfMolecules = 2
 		molecularSystem.numberOfAtomsInMolecule = [0, 4]
@@ -36,14 +36,14 @@ class SupramolecularConformationTest {
 	
 	
 	@After
-	public void tearDown() {
+	void tearDown() {
 		molecularSystem = null
 		supramolecularConformation.finalize()
 	
 	}
 	
 	@Test
-	public void zeroTranslation(){
+	void zeroTranslation(){
 		supramolecularConformation.adjustPositions = true
 		supramolecularConformation.adjustAngles = false
 		solution = new double[3]
@@ -57,7 +57,7 @@ class SupramolecularConformationTest {
 		}
 	
 	@Test
-	public void zeroRotation(){
+	void zeroRotation(){
 		supramolecularConformation.adjustPositions = false
 		supramolecularConformation.adjustAngles = true
 		solution = new double[3]
@@ -71,7 +71,7 @@ class SupramolecularConformationTest {
 	}
 	
 	@Test
-	public void transAndZeroRot(){
+	void transAndZeroRot(){
 		supramolecularConformation.adjustPositions = true
 		supramolecularConformation.adjustAngles = true
 		solution = new double[6]
@@ -88,7 +88,7 @@ class SupramolecularConformationTest {
 	}
 	
 	@Test
-	public void transTo001AndRot(){
+	void transTo001AndRot(){
 		supramolecularConformation.adjustPositions = true
 		supramolecularConformation.adjustAngles = true
 		solution = new double[6]
