@@ -49,6 +49,6 @@ The documentation can be viewed in a browser by opening docs/index.html
 
 Initially the environment variable must be set for external codes, e.g.:
 
-`export MOPAC_EXE=’/opt/mopac/MOPAC2012.exe’`
+`export MOPAC_EXE=/opt/mopac/MOPAC2012.exe`
 
 
