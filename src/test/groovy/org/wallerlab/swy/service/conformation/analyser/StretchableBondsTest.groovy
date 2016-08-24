@@ -2,13 +2,11 @@ package org.wallerlab.swy.service.conformation.analyser;
 
 import spock.lang.*
 
-import org.wallerlab.swy.service.conformation.analyser.StretchableBonds;
+import org.wallerlab.swy.model.MolecularSystem
 
-import org.wallerlab.swy.model.MolecularSystem;
-import org.wallerlab.swy.model.SearchSpace;
-
-public class StretchableBondsTest extends Specification{
-	public StretchableBonds stretchableBonds
+class StretchableBondsTest extends Specification{
+	
+	private  StretchableBonds stretchableBonds
 	
 	private MolecularSystem molecularSystem
 	
