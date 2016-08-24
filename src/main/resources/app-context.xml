@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+moved completely into configuration class file
+not outcommented to be able to show the dependency graph...not working yet (STS/Spring hasn't implemented that yet)
+
+ -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xmlns:context="http://www.springframework.org/schema/context"
+     xmlns:jms="http://www.springframework.org/schema/jms"
+      xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/jms 
+                           http://www.springframework.org/schema/jms/spring-jms.xsd
+                           http://activemq.apache.org/schema/core          
+                           http://activemq.apache.org/schema/core/activemq-core.xsd">
+	
+<!-- 	<context:component-scan base-package="org.wallerlab.swy" /> -->
+	
+	<bean class="org.wallerlab.swy.configuration.SwyConfig"/>
+	<context:annotation-config/>
+
+	
+<!-- 	<context:property-placeholder location="classpath:application.properties" /> -->
+	
+</beans>
+
