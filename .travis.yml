@@ -1,0 +1,26 @@
+language: groovy
+jdk:
+  - oraclejdk8
+  
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    
+install: echo "skip 'gradle assemble' step"
+script: ./gradlew clean build 
+
+#after_success:
+#    - ./gradlew pitest
+#    - ./gradlew uploadArchives
+
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/15bc7d4d0d6510200301
+    on_success: always  # options: [always|never|change] default: always
+    on_failure: always  # options: [always|never|change] default: always
+    on_start: always     # options: [always|never|change] default: always
