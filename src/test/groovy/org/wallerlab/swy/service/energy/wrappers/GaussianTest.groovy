@@ -1,30 +1,14 @@
 package org.wallerlab.swy.service.energy.wrappers;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
-import org.junit.Before;
-import org.junit.After;
+import static org.junit.Assert.*
+import org.junit.Test
+import org.junit.Before
+import org.junit.After
 
-import org.wallerlab.swy.service.energy.wrappers.Gaussian;
 import spock.lang.*
 
 class GaussianTest extends Specification{
 		
-	private Gaussian gauss
-	
-	
-/*	@Unroll
-	def "Test that Gaussian executable String is set." () {
-			
-		given:
-		gauss = new Gaussian()
-		
-		expect:
-		gauss.exeString
-	}*/
-	
-	
-	
 	def MethaneXml ="""<molecule name="METHANE">
 	<atoms>
 	  <atom symbol="C" x="0.257" y="-0.363" z="0.000"/>
