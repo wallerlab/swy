@@ -1,4 +1,4 @@
-package org.wallerlab.swy.service.conformation.manipulation;
+package org.wallerlab.swy.service.conformation.manipulation
 
 import org.wallerlab.swy.model.Coordinates
 import org.wallerlab.swy.model.MolecularSystem
@@ -44,10 +44,10 @@ class TurnAroundAxisTest extends Specification{
 		molecularSystem = null
 		
 		where:
-		atomsToRotate		|	centerOfRotation	|	atomOneCoords	|	atomTwoCoords
-		[2]					|	[1.0, 0.0, 1.0]		|	[1.0, 0.0, 1.0]	|	[1.0, 0.0, 0.0]
-		[1, 2]				|	[0.0, 0.0, 1.0]		|	[0.0, 0.0, 0.0]	|	[0.0, 0.0, -1.0]
-		[2]					|	[2.0, 0.0, 1.0]		|	[1.0, 0.0, 1.0]	|	[2.0, 0.0, 1.0]
+		atomsToRotate	|	centerOfRotation	|	atomOneCoords	|	atomTwoCoords
+		[2]		|	[1.0, 0.0, 1.0]		|	[1.0, 0.0, 1.0]	|	[1.0, 0.0, 0.0]
+		[1, 2]		|	[0.0, 0.0, 1.0]		|	[0.0, 0.0, 0.0]	|	[0.0, 0.0, -1.0]
+		[2]		|	[2.0, 0.0, 1.0]		|	[1.0, 0.0, 1.0]	|	[2.0, 0.0, 1.0]
 	}
 	
 	@Unroll
@@ -74,9 +74,9 @@ class TurnAroundAxisTest extends Specification{
 		molecularSystem = null
 		
 		where:
-		turnMatrix											|	xCoords						|	yCoords						|	zCoords
-		[[1.0, 0.0, 0.0], [0.0, 0.0, -1.0], [0.0, 1.0, 0.0]]|	[0.0, 1.0, 2.0, 1.0, 1.0]	|	[0.0, 0.0, 0.0, 0.0, 0.0]	|	[1.0, 1.0, 1.0, 2.0, 0.0]
-		[[0.0, 1.0, 0.0], [-1.0, 0.0, 0.0], [0.0, 0.0, 1.0]]|	[1.0, 1.0, 1.0, 2.0, 0.0]	|	[1.0, 0.0, -1.0, 0.0, 0.0]	|	[1.0, 1.0, 1.0, 1.0, 1.0]
-		[[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]	|	[0.0, 1.0, 2.0, 1.0, 1.0]	|	[0.0, 0.0, 0.0, 1.0, -1.0]	|	[1.0, 1.0, 1.0, 1.0, 1.0]
+		turnMatrix	        |	xCoords			|	yCoords				                |	zCoords
+		[[1.0, 0.0, 0.0], [0.0, 0.0, -1.0], [0.0, 1.0, 0.0]]|	[0.0, 1.0, 2.0, 1.0, 1.0] |[0.0, 0.0, 0.0, 0.0, 0.0]	|[1.0, 1.0, 1.0, 2.0, 0.0]
+		[[0.0, 1.0, 0.0], [-1.0, 0.0, 0.0], [0.0, 0.0, 1.0]]|	[1.0, 1.0, 1.0, 2.0, 0.0] |[1.0, 0.0, -1.0, 0.0, 0.0]	|[1.0, 1.0, 1.0, 1.0, 1.0]
+		[[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]] |	[0.0, 1.0, 2.0, 1.0, 1.0] |[0.0, 0.0, 0.0, 1.0, -1.0]	|[1.0, 1.0, 1.0, 1.0, 1.0]
 	}
 }
