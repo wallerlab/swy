@@ -1,8 +1,7 @@
-package org.wallerlab.swy.service.conformation.factory;
+package org.wallerlab.swy.service.conformation.factory
 
 import org.wallerlab.swy.model.MolecularSystem
 import org.wallerlab.swy.model.Coordinates
-import org.wallerlab.swy.service.modeltools.CoordinateFactory
 
 import spock.lang.*
 
