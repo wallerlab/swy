@@ -1,8 +1,9 @@
-package org.wallerlab.swy.service.fitness;
+package org.wallerlab.swy.service.fitness
 
-import spock.lang.*;
+import spock.lang.*
 
-public class ExponentialFitnessTest extends Specification{
+class ExponentialFitnessTest extends Specification{
+	
 	@Shared
 	private ExponentialFitness exponentialFitness
 	
@@ -29,7 +30,7 @@ public class ExponentialFitnessTest extends Specification{
 			
 		where:
 		energy				|	fitness
-		1.0					|	1.0
+		1.0				|	1.0
 		-3.0				|	1.0
 		-1.0				|	0.36788
 		Double.NaN			|	0.0
