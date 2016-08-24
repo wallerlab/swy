@@ -1,9 +1,21 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath "org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.6.3"
+    }
+}
+
 apply plugin: 'groovy'
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 apply plugin: 'codenarc'
+apply plugin: 'jacoco'
+apply plugin: 'com.github.kt3k.coveralls'
 
 
 sourceCompatibility = 1.8
@@ -94,3 +106,21 @@ codenarc {
 
 task createWrapper(type: Wrapper) { gradleVersion = '3.0' }
 
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true // coveralls plugin depends on xml format report
+        html.enabled = true
+    }
+
+    afterEvaluate {
+        classDirectories = files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: ['**/pdbml/**'])
+        })
+    }
+}
+
+coveralls {
+  sourceDirs = subprojects.sourceSets.main.allSource.srcDirs.flatten()
+  jacocoReportPath = "${buildDir}/reports/jacoco/test/jacocoTestReport.xml"
+}
