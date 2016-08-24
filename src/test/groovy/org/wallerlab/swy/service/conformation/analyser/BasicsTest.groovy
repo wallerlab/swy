@@ -75,7 +75,7 @@ class BasicsTest extends Specification{
 		molecularSystem.bonds = [[[1, 2, 3], [0, 4], [0], [0], [1, 5], [4]]];
 		
 		expect:
-		Basics.getListOfAtomsOnOneSideOfBond([molecularSystem, 0, 2, 0]) == [2]
+		Basics.getListOfAtomsOnOneSideOfBond(new ArrayList(), molecularSystem, 0, 2, 0) == [2]
 		Basics.getListOfAtomsOnOneSideOfBond(new ArrayList(), molecularSystem, 0, 0, 2) == [0, 1, 3, 4, 5]
 		Basics.getListOfAtomsOnOneSideOfBond(new ArrayList(), molecularSystem, 0, 0, 1) == [0, 2, 3]
 		
