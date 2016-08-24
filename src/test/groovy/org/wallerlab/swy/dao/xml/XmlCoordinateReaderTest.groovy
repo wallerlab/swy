@@ -1,4 +1,4 @@
-package org.wallerlab.swy.dao.xml;
+package org.wallerlab.swy.dao.xml
 
 import org.springframework.core.io.ClassPathResource
 import org.wallerlab.swy.model.MolecularSystem
