@@ -13,9 +13,8 @@ cache:
 install: echo "skip 'gradle assemble' step"
 script: ./gradlew clean build jacocoTestReport coveralls
 
-#after_success:
-#    - ./gradlew pitest
-    - ./gradlew bintrayUpload
+after_success:
+ -./gradlew bintrayUpload
 
 notifications:
   webhooks:
