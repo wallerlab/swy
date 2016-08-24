@@ -1,9 +1,9 @@
-package org.wallerlab.swy.service.energy;
+package org.wallerlab.swy.service.energy
 
 import org.wallerlab.swy.model.SearchSpace
-import spock.lang.*;
+import spock.lang.*
 
-public class MathematicalFunctionTest extends Specification{
+class MathematicalFunctionTest extends Specification{
 
 	private MathematicalFunction mathematicalFunction
 	
@@ -25,13 +25,13 @@ public class MathematicalFunctionTest extends Specification{
 		mathematicalFunction.getEnergy(solution).round(4) == energy
 		
 		where:
-		solution								|	energy
-		[0.0, 0.0, 0.0]							|	-3.0
+		solution					|	energy
+		[0.0, 0.0, 0.0]					|	-3.0
 		[2*Math.PI, 2*Math.PI, 2*Math.PI]		|	-3.0
-		[Math.PI, 0.0, 2*Math.PI]				|	-2.95
-		[0.0, Math.PI, Math.PI]					|	-2.90
-		[Math.PI, Math.PI, Math.PI]				|	-2.85
-		[0.5*Math.PI, 0.5*Math.PI, 0.5*Math.PI]	|	0.1125
+		[Math.PI, 0.0, 2*Math.PI]			|	-2.95
+		[0.0, Math.PI, Math.PI]				|	-2.90
+		[Math.PI, Math.PI, Math.PI]			|	-2.85
+		[0.5*Math.PI, 0.5*Math.PI, 0.5*Math.PI]    	|	0.1125
 		
 	}
 }
