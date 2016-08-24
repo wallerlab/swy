@@ -15,7 +15,7 @@ script: ./gradlew clean build jacocoTestReport coveralls
 
 #after_success:
 #    - ./gradlew pitest
-#    - ./gradlew uploadArchives
+    - ./gradlew bintrayUpload
 
 notifications:
   webhooks:

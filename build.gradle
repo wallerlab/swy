@@ -5,6 +5,7 @@ buildscript {
     }
     dependencies {
         classpath "org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.6.3"
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7'
     }
 }
 
@@ -16,7 +17,15 @@ apply plugin: 'application'
 apply plugin: 'codenarc'
 apply plugin: 'jacoco'
 apply plugin: 'com.github.kt3k.coveralls'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'maven-publish'
 
+
+
+
+group = "org.wallerlab"
+version = '0.1-RC1'
+description= 'swy'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -123,4 +132,36 @@ jacocoTestReport {
 coveralls {
   sourceDirs = subprojects.sourceSets.main.allSource.srcDirs.flatten()
   jacocoReportPath = "${buildDir}/reports/jacoco/test/jacocoTestReport.xml"
+}
+
+
+publishing {
+	publications {
+		MyPublication(MavenPublication) {
+			from components.java
+			groupId 'org.wallerlab'
+            		artifactId 'swy'
+            		version '0.1-RC1'
+		}
+	}
+}
+
+bintray {
+	user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
+	key = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY')
+	publications = ['MyPublication']
+	pkg {
+		repo = 'release-candidates'
+		name = 'swy'
+		userOrg = 'wallerlab'
+		licenses = ['Apache-2.0']
+		vcsUrl = 'https://github.com/wallerlab/swy.git'
+		labels = ['HMO', 'opt', 'global']
+		publicDownloadNumbers = true
+		version {
+			name = '0.1-RC1'
+			desc = 'Non-local Optimizer'
+			vcsTag = 'v0.1'
+		}
+	}
 }
