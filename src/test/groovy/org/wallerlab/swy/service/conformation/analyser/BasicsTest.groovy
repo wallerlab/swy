@@ -5,7 +5,7 @@ import spock.lang.*
 import org.wallerlab.swy.model.Coordinates
 import org.wallerlab.swy.model.MolecularSystem
 
-public class BasicsTest extends Specification{
+class BasicsTest extends Specification{
 
 	private MolecularSystem molecularSystem
 	
@@ -86,19 +86,19 @@ public class BasicsTest extends Specification{
 	@Unroll
 	def "Test to create a list of atoms on one side of a bond in a ring system"() {
 		
-		given:
-		molecularSystem = new MolecularSystem()
-		molecularSystem.rings = [[[0, 1, 2, 3, 4, 5]]]
-		molecularSystem.bonds = [ [ [1, 5, 6], [0, 2, 8], [1, 3, 9], [2, 4, 10], [3, 5, 11], [0, 4, 12], [0, 7], [6], [1], [2], [3], [4], [5] ] ];
+	given:
+	molecularSystem = new MolecularSystem()
+	molecularSystem.rings = [[[0, 1, 2, 3, 4, 5]]]
+	molecularSystem.bonds = [ [ [1, 5, 6],[0, 2, 8],[1, 3, 9],[2, 4, 10],[3, 5, 11],[0, 4, 12],[0, 7],[6],[1],[2],[3],[4],[5]]];
 		
-		expect:
-		Basics.getListOfAtomsOnOneSideOfBond(new ArrayList(), molecularSystem, 0, 6, 0) == \
-			[6, 7]
-		Basics.getListOfAtomsOnOneSideOfBond(new ArrayList(), molecularSystem, 0, 0, 6) == \
-			[0, 1, 2, 3, 4, 5, 8, 9, 10, 11, 12]
-		
-		cleanup:
-		molecularSystem = null
+	expect:
+	Basics.getListOfAtomsOnOneSideOfBond(new ArrayList(), molecularSystem, 0, 6, 0) == \
+		[6, 7]
+	Basics.getListOfAtomsOnOneSideOfBond(new ArrayList(), molecularSystem, 0, 0, 6) == \
+		[0, 1, 2, 3, 4, 5, 8, 9, 10, 11, 12]
+	
+	cleanup:
+	molecularSystem = null
 	}
 	
 }
