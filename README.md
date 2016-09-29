@@ -53,3 +53,6 @@ Initially the environment variable must be set for external codes, e.g.:
 `export MOPAC_EXE=/opt/mopac/MOPAC2012.exe`
 
 
+#Example:
+
+[![DEMO](https://cloud.githubusercontent.com/assets/13583117/18966537/e079ab50-8681-11e6-9145-52bd1a4ad6c4.png)](https://www.youtube.com/watch?v=B9fMx7RRP_Y)
