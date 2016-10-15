@@ -1,6 +1,5 @@
 # Swy
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.wallerlab/swy/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.wallerlab/swy)
 [ ![Download](https://api.bintray.com/packages/wallerlab/release-candidates/swy/images/download.svg) ](https://bintray.com/wallerlab/release-candidates/swy/_latestVersion)
 [![Apache License](http://img.shields.io/badge/license-APACHE2-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 [![Build Status](https://travis-ci.org/wallerlab/swy.svg?branch=master)](https://travis-ci.org/wallerlab/swy)
