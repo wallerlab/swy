@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/wallerlab/swy.svg?branch=master)](https://travis-ci.org/wallerlab/swy)
 [![Coverage Status](https://coveralls.io/repos/github/wallerlab/swy/badge.svg?branch=master)](https://coveralls.io/github/wallerlab/swy?branch=master)
 
-**A Hybrid Metaheuristic Approach for Non-Local Optimization of Molecular Systems** 
+** A Hybrid Metaheuristic Approach for Non-Local Optimization of Molecular Systems** 
 
 Thomas Dresselhaus, Jack Yang, Sadhana Kumbhar, Mark P. Waller
 J. Chem. Theory Comput., (2013) 9, 2137–2149. 
@@ -13,7 +13,7 @@ J. Chem. Theory Comput., (2013) 9, 2137–2149.
 DOI:10.1021/ct301079m
 
 
-#Quick Start 
+# Quick Start 
 
 ` git clone https://github.com/wallerlab/swy.git`
 
@@ -51,6 +51,6 @@ Initially the environment variable must be set for external codes, e.g.:
 `export MOPAC_EXE=/opt/mopac/MOPAC2012.exe`
 
 
-#Example:
+# Example:
 
 [![DEMO](https://cloud.githubusercontent.com/assets/13583117/18966537/e079ab50-8681-11e6-9145-52bd1a4ad6c4.png)](https://www.youtube.com/watch?v=B9fMx7RRP_Y)
